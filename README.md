@@ -25,10 +25,6 @@ Install ```vim-plug``` first, then run ```:PlugInstall```.
 ``` 
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 ```
-or
-```
-cp plug.vim ~/.config/nvim/autoload/
-```
 
 Check ```https://github.com/neovim/neovim``` for any update.
 
