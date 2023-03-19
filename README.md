@@ -10,7 +10,7 @@ Check [Git:Oh-My-Zsh](https://github.com/ohmyzsh/ohmyzsh) for any update.
 Default plugins are in the following:
 
 ```
-git clone git@github.com:Purkialo/nord_for_zsh $ZSH/themes/nord-extended
+git clone https://github.com/Purkialo/nord_for_zsh.git $ZSH/themes/nord-extended
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
