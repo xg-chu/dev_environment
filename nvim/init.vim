@@ -18,7 +18,7 @@ let g:SimpylFold_fold_docstring = 0
 
 call plug#begin('~/.config/nvim/plugged')
     " Plug 'nordtheme/vim'
-    Plug 'gelguy/wilder.nvim'
+    Plug 'gelguy/wilder.nvim', { 'do': ':UpdateRemotePlugins' }
     Plug 'echasnovski/mini.nvim'
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'easymotion/vim-easymotion'
