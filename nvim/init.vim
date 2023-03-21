@@ -17,9 +17,10 @@ let g:SimpylFold_fold_docstring = 0
 " Plug
 
 call plug#begin('~/.config/nvim/plugged')
-"    Plug 'nordtheme/vim'
+    " Plug 'nordtheme/vim'
     Plug 'gelguy/wilder.nvim'
     Plug 'echasnovski/mini.nvim'
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'easymotion/vim-easymotion'
     Plug 'nvim-lualine/lualine.nvim'
     Plug 'kyazdani42/nvim-web-devicons'
@@ -33,8 +34,8 @@ call wilder#setup({'modes': [':', '/', '?']})
 lua << END
     require('mini.pairs').setup()
     require('pretty-fold').setup()
-    require('mini.completion').setup({delay={completion=10}})
     require('lualine').setup{options = { theme  = 'nord' },...}
+    -- require('mini.completion').setup({delay={completion=10}})
     vim.api.nvim_set_keymap('i', '<Tab>',   [[pumvisible() ? "\<C-n>" : "\<Tab>"]],   { noremap = true, expr = true })
     vim.api.nvim_set_keymap('i', '<S-Tab>', [[pumvisible() ? "\<C-p>" : "\<S-Tab>"]], { noremap = true, expr = true })
 END
