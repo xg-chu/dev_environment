@@ -38,5 +38,7 @@ lua << END
     -- require('mini.completion').setup({delay={completion=10}})
     vim.api.nvim_set_keymap('i', '<Tab>',   [[pumvisible() ? "\<C-n>" : "\<Tab>"]],   { noremap = true, expr = true })
     vim.api.nvim_set_keymap('i', '<S-Tab>', [[pumvisible() ? "\<C-p>" : "\<S-Tab>"]], { noremap = true, expr = true })
+    vim.api.nvim_set_keymap('i', '<CR>', [[pumvisible() ? "\<C-y>" : "\<CR>"]], { noremap = true, expr = true })
+    -- open :CocConfig, add {"suggest.noselect": true} to coc-settings.json
 END
 
