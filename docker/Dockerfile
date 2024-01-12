@@ -32,6 +32,8 @@ ENTRYPOINT [ "/bin/zsh" ]
 CMD ["-l"]
 
 ### RUN COMMAND ###
+# python -m pip wheel git+https://github.com/KAIR-BAIR/nerfacc.git
+# python -m pip wheel git+https://github.com/NVlabs/nvdiffrast.git
 # docker build -t x-chu/nerf:1.0.0 .
 # docker run --net=host --mount type=bind,source=/home/mil/x-chu/,target=/home/mil/x-chu/ --mount type=bind,source=/data/umihebi0/users/x-chu/Data,target=/data/umihebi0/users/x-chu/Data --mount type=bind,source=/data/utsubo0/users/x-chu/Data,target=/data/utsubo0/users/x-chu/Data --name x-chu_nerf_1.0.0 -itd --rm --runtime=nvidia --gpus all x-chu/nerf:1.0.0
 # docker exec -it x-chu_nerf_1.0.0 zsh
