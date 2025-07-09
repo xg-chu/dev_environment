@@ -35,3 +35,6 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 
 Check ```https://github.com/neovim/neovim``` for any update.
 
+
+## Docker
+```docker build --no-cache -t x-chu/3dcv_home:2.0.0 .```
