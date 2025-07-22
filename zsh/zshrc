@@ -18,6 +18,10 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 source $ZSH/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+alias rundocker="docker run --net=host --mount type=bind,source=/home/mil/x-chu/,target=/home/mil/x-chu/ --mount type=bind,source=/data/umihebi0/users/x-chu/Data,target=/data/umihebi0/users/x-chu/Data --name x-chu_avatar_1.0.0 -itd --shm-size=10240m --rm --runtime=nvidia --gpus all -u $(id -u ${USER}):$(id -g ${USER}) x-chu/avatar:1.0.0"
+alias rundocker_sudo="docker run --mount type=bind,source=/home/mil/x-chu/,target=/home/mil/x-chu/ --net=host --name x-chu_avatar_1.0.0 -itd --rm x-chu/avatar:1.0.0"
+alias indocker="docker exec -it x-chu_avatar_1.0.0 zsh"
+
 #### User configuration ####
 
 # export LANG=en_US.UTF-8
