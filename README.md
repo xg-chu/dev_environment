@@ -38,3 +38,6 @@ Check ```https://github.com/neovim/neovim``` for any update.
 
 ## Docker
 ```docker build --no-cache -t x-chu/3dcv_home:2.0.0 .```
+
+## Step 4. Time to install Claude Code!
+```curl -fsSL https://claude.ai/install.sh | bash```
